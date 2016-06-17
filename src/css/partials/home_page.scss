@@ -1,0 +1,214 @@
+
+header {
+  font-size: 1.1429em;
+  background: url("../img/bg/header-bg-lg.jpg") no-repeat center 0 / cover;
+  color: #fff;
+  @include respond-to(small-desktops) {
+    background: url("../img/bg/header-bg-md.jpg") no-repeat center 0 / cover;
+  }
+  @include respond-to(tablets) {
+    background: url("../img/bg/header-bg-sm.jpg") no-repeat center 0 / cover;
+    font-size: 1em;
+  }
+  @include respond-to(all-handhelds) {
+    background: url("../img/bg/header-bg-xs.jpg") no-repeat center 0 / cover;
+  }
+  #logo-and-contacts {
+    padding-top: 15px;
+    @include respond-to(full-hd) {
+      padding-top: 70px;
+    }
+  }
+  a, a:link, a:visited, a:hover, a:focus, a:active {
+    color: #fff;
+    outline: none;
+  }
+  a.logo:hover {
+    color: #fff;
+    text-decoration: none;
+  }
+  #logo {
+    text-transform: uppercase;
+  }
+  h1 {
+    font-size: 1em;
+    font-weight: 700;
+    letter-spacing: 3px;
+    line-height: 1.42857;
+    margin: 0;
+  }
+  .contacts {
+    font-weight: 300;
+    @include respond-to(all-handhelds) {
+      margin-top: 10px;
+    }
+    &:last-child {
+      text-align: right;
+      @include respond-to(all-handhelds) {
+        text-align: center;
+      }
+    }
+  }
+  nav {
+    margin-top: 15px;
+    @include respond-to(full-hd) {
+      margin-top: 50px;
+    }
+  }
+  .about {
+    margin-top: 90px;
+    @include respond-to(tablets) {
+      margin-top: 100px;
+    }
+    @include respond-to(full-hd) {
+      margin-top: 170px;
+    }
+    @include respond-to(all-handhelds) {
+      margin-top: 0;
+    }
+    .name {
+      font-size: 60px;
+      font-weight: 700;
+      @include respond-to(small-desktops) {
+        font-size: 50px;
+      }
+      @include respond-to(tablets) {
+        font-size: 40px;
+      }
+      @include respond-to(all-handhelds) {
+        font-size: 34px;
+      }
+    }
+    .services {
+      font-size: 35px;
+      color: #f7f7f7;
+      @include respond-to(small-desktops) {
+        font-size: 30px;
+      }
+      @include respond-to(tablets) {
+        font-size: 22px;
+      }
+      @include respond-to(all-handhelds) {
+        font-size: 18px;
+      }
+    }
+  }
+  .question {
+    margin-top: 50px;
+    @include respond-to(full-hd) {
+      margin-top: 120px;
+    }
+    @include respond-to(small-desktops) {
+      margin-top: 30px;
+    }
+    @include respond-to(tablets) {
+      margin-top: 30px;
+    }
+    @include respond-to(all-handhelds) {
+      margin-top: 30px;
+    }
+    label {
+      @include respond-to(all-handhelds) {
+        text-align: left;
+      }
+    }
+  }
+}
+
+#services-for-individual {
+  padding: 50px 0;
+  ul {
+    margin-top: 40px;
+    padding: 0;
+    li {
+      list-style-type: none;
+      height: 56px;
+      margin-top: 10px;
+      @include respond-to(all-handhelds) {
+        margin-top: 30px;
+        height: 100px;
+      }
+      h4 {
+        line-height: 1.42857;
+        a {
+          color: #333;
+        }
+      }
+      .media-body, .media-left, .media-right {
+        @include respond-to(all-handhelds) {
+          display: block;
+        }
+      }
+      .media-body {
+        @include respond-to(all-handhelds) {
+          width: auto;
+          margin-top: 5px;
+        }
+      }
+    }
+    li[class*=col-xs-] {
+      @include respond-to(handhelds) {
+        width: 100%;
+      }
+      @include respond-to(narrow-handhelds) {
+        width: 100%;
+      }
+    }
+  }
+}
+
+#map {
+  height: 400px;
+}
+
+footer {
+  padding: 30px 0;
+  color: #666;
+  @include respond-to(all-handhelds) {
+    .container > div + div {
+      margin-top: 10px;
+    }
+  }
+  a, a:link, a:visited, a:hover, a:focus, a:active {
+    color: #666;
+  }
+  a:hover, a:focus, a:active {
+    text-decoration: underline;
+  }
+  .logo {
+    .name {
+      font-size: 28px;
+    }
+  }
+  .social {
+    text-align: center;
+    padding-top: 15px;
+    @include respond-to(all-handhelds) {
+      padding-top: 0;
+    }
+    img {
+      opacity: .6;
+      &:hover {
+        opacity: .9;
+      }
+    }
+    a + a img {
+      margin-left: 10px;
+    }
+  }
+  .contacts {
+    text-align: right;
+    @include respond-to(all-handhelds) {
+      text-align: center;
+    }
+    .adress {
+      font-size: 18px;
+    }
+    .phone {
+      font-size: 24px;
+    }
+  }
+  .copyright {
+    margin-top: -15px;
+  }
+}

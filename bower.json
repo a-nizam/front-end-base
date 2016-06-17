@@ -1,0 +1,17 @@
+{
+  "name": "project",
+  "version": "1.0.0",
+  "authors": [
+    "Nizam Akhmedov <nyzam7@gmail.com>"
+  ],
+  "description": "Project",
+  "moduleType": [
+    "globals"
+  ],
+  "license": "MIT",
+  "dependencies": {},
+  "devDependencies": {
+    "jquery": "^2.2.4",
+    "bootstrap": "^3.3.6"
+  }
+}
